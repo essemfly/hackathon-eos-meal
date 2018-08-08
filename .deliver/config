@@ -2,6 +2,8 @@
 
 APP="eos_meal"
 
+AUTO_VERSION="commit-count+git-revision+branch-unless-master"
+
 BUILD_HOST="essemfly.com"
 BUILD_AT="/tmp/edeliver/eos_meal/builds"
 BUILD_USER="essem"
