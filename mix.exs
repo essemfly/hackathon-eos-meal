@@ -20,7 +20,7 @@ defmodule EosMeal.Mixfile do
   def application do
     [
       mod: {EosMeal.Application, []},
-      extra_applications: [:logger, :runtime_tools]
+      extra_applications: [:logger, :runtime_tools, :edeliver]
     ]
   end
 
@@ -38,7 +38,9 @@ defmodule EosMeal.Mixfile do
       {:phoenix_ecto, "~> 3.2"},
       {:postgrex, ">= 0.0.0"},
       {:gettext, "~> 0.11"},
-      {:cowboy, "~> 1.0"}
+      {:cowboy, "~> 1.0"},
+      {:edeliver, "~> 1.5.0"},
+      {:distillery, "~> 1.0.0", warn_missing: false}
     ]
   end
 
