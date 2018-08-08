@@ -12,8 +12,8 @@ config :eos_meal,
 # Configures the endpoint
 config :eos_meal, EosMealWeb.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "fPI+1dMeFYvrQd5jPo1opm2M65X1Q2ydZRQEWo4AU6gXgzp3jFkwg7PGlvGLbCKe",
-  render_errors: [view: EosMealWeb.ErrorView, accepts: ~w(json)],
+  secret_key_base: "Tp9kDqhALQtrzNnhJBFxDxEk0kPDQaW3wRFcHqC6KE8iaQ7z460TYfq/WdX/CWCF",
+  render_errors: [view: EosMealWeb.ErrorView, accepts: ~w(html json)],
   pubsub: [name: EosMeal.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
