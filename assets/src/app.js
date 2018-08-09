@@ -1,6 +1,6 @@
-import Vue from 'vue'
-import Eosjs from 'eosjs'
-import App from './App.vue'
+import Vue from 'vue';
+import Eosjs from 'eosjs';
+import App from './App.vue';
 // import Main from './Main.vue'
 
 new Vue({
@@ -17,7 +17,12 @@ new Vue({
     };
 
     return {
-      eos: Eosjs(config)
+      eos: Eosjs(config),
+      options: {
+        authorization: ["daybit@active"],
+        broadcast: true,
+        sign: true
+      }
     };
   },
   render: function(h) {
