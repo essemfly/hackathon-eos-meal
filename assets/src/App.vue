@@ -1,5 +1,5 @@
 <template>
-  <div id="main">
+  <div id="landing">
     <h1>{{ msg }}</h1>
     <h2>정빈이가 얼마나 밥을 먹었는지 한번 확인해볼까?</h2>
   </div>
@@ -7,12 +7,16 @@
 
 <script>
 export default {
-  name: 'main',
+  name: "landing",
   data () {
+    console.log(this.$parent.eos)
     return {
-      msg: '정빈이 수유 기록표',
+      msg: "",
       user: ""
     }
+  },
+  created () {
+    this.msg = "안녕 내사랑?!"
   }
 }
 </script>
