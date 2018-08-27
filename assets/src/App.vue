@@ -1,6 +1,6 @@
 <template>
   <div id="landing" style="background:#ECECEC; padding:30px; height: 100%;">
-    <a-card title="정빈이가 밥을 얼마나 먹었는지 확인해볼까?" :bordered="false" style="width: 100%; height: 100%;">
+    <a-card title="정빈이가 밥을 얼마나 먹었는지 확인해볼까?" :bordered="false" style="width: 100%; height: 100%; overflow-y: scroll;">
       <p>정빈이가 먹은 양과 시간을 입력해주세요</p>
       <a-row class="record-list">
         <a-col :span="12">
