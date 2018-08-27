@@ -65,7 +65,7 @@ export default {
     return {
       histories: [],
       child_name: "이정빈",
-      milk_type: "breast",
+      milk_type: "powdered",
       milk_volume: 120,
       milk_day: "today",
       milk_time: moment(),
