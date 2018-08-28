@@ -12,7 +12,7 @@
       </a-row>
       <a-row class="record-list">
         <a-col :span="10">
-          <a-time-picker :value="milk_time" format="HH:mm" :minuteStep="15" />
+          <a-time-picker format="HH:mm" :minuteStep="15"  @change="handleTimeChange" :value="milk_time" />
         </a-col>
         <a-col :span="12" :offset="2">
           <a-radio-group :value="milk_day" @change="handleDayChange" style="float:right;">
@@ -79,6 +79,9 @@ export default {
   },
   methods: {
     moment,
+    handleTimeChange(e) {
+      this.milk_time = e;
+    },
     handleDayChange(e) {
       this.milk_day = e.target.value;
     },
